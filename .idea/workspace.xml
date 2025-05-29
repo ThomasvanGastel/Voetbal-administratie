@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610bb3eb-6cd7-4d10-8349-defb8ec0c624" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/HomeScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/SpelerScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/TeamScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/WedstrijdScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/util/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/LoginScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ResultaatScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/thomas/voetbaladministratie/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SpelerScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/TeamScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/TeamScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/WedstrijdScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/WedstrijdScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <workItem from="1740135397780" duration="1533000" />
       <workItem from="1748280999603" duration="695000" />
       <workItem from="1748507663391" duration="1809000" />
-      <workItem from="1748510411294" duration="2593000" />
+      <workItem from="1748510411294" duration="4098000" />
     </task>
     <servers />
   </component>

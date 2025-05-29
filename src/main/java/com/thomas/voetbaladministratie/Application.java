@@ -1,8 +1,8 @@
 package com.thomas.voetbaladministratie;
 
-import com.thomas.voetbaladministratie.screens.HomeScreen;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import screens.HomeScreen;
 
 import java.io.IOException;
 
