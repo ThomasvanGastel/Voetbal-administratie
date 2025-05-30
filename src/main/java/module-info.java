@@ -1,8 +1,9 @@
 module com.thomas.voetbaladministratie {
     requires javafx.controls;
-    requires javafx.fxml;
+    requires java.sql;
 
-
-    opens com.thomas.voetbaladministratie to javafx.fxml;
     exports com.thomas.voetbaladministratie;
+    exports com.thomas.voetbaladministratie.dao;
+    exports com.thomas.voetbaladministratie.model;
+    exports com.thomas.voetbaladministratie.util;
 }

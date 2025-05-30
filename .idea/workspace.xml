@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610bb3eb-6cd7-4d10-8349-defb8ec0c624" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/util/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/LoginScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/screens/ResultaatScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/HomeScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/LoginScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/RegisterScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/util/Session.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/HomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/SpelerScreen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/TeamScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/TeamScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/screens/WedstrijdScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/WedstrijdScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/TeamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/util/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/util/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/HomeScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/LoginScreen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ResultaatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/ResultaatScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/TeamScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/TeamScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/WedstrijdScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/WedstrijdScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +78,9 @@
       <recent name="C:\Users\thoma\Documents\GitHub\Voetbal-administratie\src\main\resources\com\thomas\voetbaladministratie\images" />
       <recent name="C:\Users\thoma\Documents\GitHub\Voetbal-administratie\src\main\resources\com\thomas\voetbaladministratie" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.thomas.voetbaladministratie" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -94,11 +105,24 @@
       <workItem from="1740135397780" duration="1533000" />
       <workItem from="1748280999603" duration="695000" />
       <workItem from="1748507663391" duration="1809000" />
-      <workItem from="1748510411294" duration="4098000" />
+      <workItem from="1748510411294" duration="4948000" />
+      <workItem from="1748539811143" duration="2900000" />
+      <workItem from="1748590332165" duration="3217000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
