@@ -1,67 +1,64 @@
-# Voetbal-administratie
+# Implementatieplan Voetbaladministratie-app
 
-Implementatieplan voor de Voetbaladministratie-app
-Voortgang: De basis is af, maar de app kan nog verder uitgebreid worden
+**Voortgang:** De basis is af, maar de app kan nog verder uitgebreid worden  
 
-1. Wat is er nu en wat moet er gebeuren
-Huidige situatie:
-De voetbalapp is grotendeels af. De volgende dingen werken al:
+---
 
-Teams beheren
+## 1. Wat is er nu en wat moet er gebeuren
 
-Wedstrijden plannen, aanpassen en verwijderen
+### Huidige situatie
+De voetbalapp is grotendeels af. De volgende onderdelen werken al:
 
-Resultaten van wedstrijden invoeren
+- Teams beheren
+- Wedstrijden plannen, aanpassen en verwijderen
+- Resultaten van wedstrijden invoeren
 
-Wat kan later nog toegevoegd worden:
+### Wat kan later nog toegevoegd worden
 
-Goals koppelen aan individuele spelers (wie heeft gescoord)
+- Goals koppelen aan spelers (wie heeft gescoord)
+- Een volledige competitie bijhouden (stand, ranglijst)
+- Automatische puntenverdeling (winst/gelijk/verlies)
+- Exporteren van gegevens (bijvoorbeeld naar PDF of Excel)
 
-Een volledig competitieoverzicht met stand en ranglijst
+### Doel
+De huidige versie van de app gebruiken in een echte omgeving (zoals op school of bij een sportclub). Later kunnen de extra functies stap voor stap toegevoegd worden.
 
-Automatische puntentelling bij winst/gelijk/verlies
+### Stappen
 
-Exporteren van gegevens (bijv. naar PDF of Excel)
+1. App controleren en testen
+2. Database overzetten naar productieomgeving
+3. Verbinding met de juiste database instellen
+4. App installeren en starten op de gewenste computer of server
+5. Testen met gebruiker
+6. Later uitbreiden met extra functies
 
-Doel:
-De huidige versie van de app installeren op een server of computer zodat deze gebruikt kan worden. Later kunnen de extra functies stap voor stap worden toegevoegd.
+---
 
-Stappen voor installatie:
+## 2. Tijdsplanning
 
-App controleren en testen op fouten
+| Week    | Activiteit                                               |
+|---------|----------------------------------------------------------|
+| Week 1  | Laatste controle op werking en fouten                    |
+| Week 2  | Database en app installeren op locatie                   |
+| Week 3  | Testen met echte gebruikers (bijvoorbeeld trainer)       |
+| Week 4  | Feedback verzamelen en kleine verbeteringen doorvoeren   |
+| Week 5  | Start met uitbreidingen zoals spelersdoelpunten en competitie |
 
-Database overzetten naar de echte omgeving
+---
 
-Applicatie verbinden met juiste database
+## 3. Communicatie en controle
 
-Applicatie installeren en opstarten
+### Communicatie
 
-Gebruiker laten testen en feedback verzamelen
+- Contact via e-mail of persoonlijk overleg met begeleider of gebruiker  
+- Belangrijke stappen en acties worden genoteerd in een logboek of verslag
 
-In de toekomst uitbreiden met extra functies
+### Controle en evaluatie
 
-2. Tijdsplanning
-Week	Activiteit
-Week 1	Laatste controle op werking en fouten
-Week 2	Database en app installeren op locatie
-Week 3	Testen met echte gebruikers (trainer/beheerder)
-Week 4	Feedback verzamelen en kleine verbeteringen doen
-Week 5	Begin maken aan uitbreidingen zoals spelersdoelpunten en competitie
+- De app werkt correct in een echte situatie
+- De gebruiker kan zelfstandig teams en wedstrijden beheren
+- Resultaten kunnen ingevoerd worden
+- Feedback van gebruiker wordt verzameld en gebruikt
+- Er is ruimte om in de toekomst verder te bouwen aan de applicatie
 
-3. Communicatie en controle
-Communicatie:
-
-Via e-mail of persoonlijk overleg met de begeleider of gebruiker
-
-Werkzaamheden worden genoteerd in een kort logboek of overzicht
-
-Controle/evaluatie:
-
-De app werkt in de praktijk: wedstrijden en resultaten kunnen ingevoerd worden
-
-De gebruiker weet hoe hij de app moet gebruiken
-
-Er is ruimte en planning voor toekomstige uitbreidingen
-
-Feedback van de gebruiker wordt verzameld en meegenomen
-
+---
