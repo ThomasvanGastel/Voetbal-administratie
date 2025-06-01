@@ -1,4 +1,5 @@
 package com.thomas.voetbaladministratie.model;
+
 import java.time.LocalDateTime;
 
 public class Game {
@@ -36,9 +37,30 @@ public class Game {
         return location;
     }
 
+    // === SETTERS VOOR BEWERKEN ===
+
+    public void setGameId(int gameId) {
+        this.gameId = gameId;
+    }
+
+    public void setHomeTeam(Team homeTeam) {
+        this.homeTeam = homeTeam;
+    }
+
+    public void setAwayTeam(Team awayTeam) {
+        this.awayTeam = awayTeam;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     @Override
     public String toString() {
-        return homeTeam.getTeamName() + " vs " + awayTeam.getTeamName() + " @ " + location;
+        return homeTeam.getTeamName() + " - " + awayTeam.getTeamName() + " Locatie: " + location;
     }
 }
-
