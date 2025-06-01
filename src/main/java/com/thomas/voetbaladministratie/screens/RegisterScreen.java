@@ -1,8 +1,8 @@
 package com.thomas.voetbaladministratie.screens;
 
 import com.thomas.voetbaladministratie.dao.UserDAO;
-import com.thomas.voetbaladministratie.model.User;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
@@ -11,46 +11,71 @@ import javafx.stage.Stage;
 public class RegisterScreen extends VBox {
 
     public RegisterScreen(Stage stage) {
-        setSpacing(10);
-        setPadding(new Insets(20));
+        getStyleClass().add("main-layout");
+        setAlignment(Pos.CENTER);
+        setSpacing(20);
+        setPadding(new Insets(40));
 
         Label title = new Label("Account aanmaken");
+        title.getStyleClass().add("title-label");
 
         TextField nameField = new TextField();
         nameField.setPromptText("Naam");
+        nameField.getStyleClass().add("form-field");
 
         TextField emailField = new TextField();
-        emailField.setPromptText("E-mail");
+        emailField.setPromptText("E-mailadres");
+        emailField.getStyleClass().add("form-field");
 
         PasswordField passwordField = new PasswordField();
         passwordField.setPromptText("Wachtwoord");
+        passwordField.getStyleClass().add("form-field");
 
-        ChoiceBox<String> roleBox = new ChoiceBox<>();
+        ComboBox<String> roleBox = new ComboBox<>();
         roleBox.getItems().addAll("trainer", "admin");
-        roleBox.setValue("trainer");
+        roleBox.setPromptText("Rol");
+        roleBox.getStyleClass().add("form-field");
 
         Label feedback = new Label();
+        feedback.getStyleClass().add("subtext");
 
-        Button registerButton = new Button("Registreer");
+        Button registerButton = new Button("Registreren");
+        registerButton.getStyleClass().add("primary-button");
+
+        Button terugButton = new Button("Terug naar login");
+        terugButton.getStyleClass().add("secondary-button");
+
         registerButton.setOnAction(e -> {
             String name = nameField.getText();
             String email = emailField.getText();
             String password = passwordField.getText();
             String role = roleBox.getValue();
 
-            User nieuweUser = new User(0, name, email, password, role);
-            boolean success = new UserDAO().register(nieuweUser);
+            if (name.isEmpty() || email.isEmpty() || password.isEmpty() || role == null) {
+                feedback.setText("Vul alle velden in.");
+                return;
+            }
 
+            boolean success = new UserDAO().register(name, email, password, role);
             if (success) {
                 feedback.setText("Account aangemaakt! Je kunt nu inloggen.");
-                stage.setScene(new Scene(new LoginScreen(stage), 800, 600));
+                Scene loginScene = new Scene(new LoginScreen(stage), 800, 600);
+                loginScene.getStylesheets().add(
+                        getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/homescreen.css").toExternalForm()
+                );
+                stage.setScene(loginScene);
             } else {
-                feedback.setText("Registratie mislukt. E-mail bestaat mogelijk al.");
+                feedback.setText("Registratie mislukt. Probeer het opnieuw.");
             }
         });
 
-        Button terugButton = new Button("Terug naar login");
-        terugButton.setOnAction(e -> stage.setScene(new Scene(new LoginScreen(stage), 800, 600)));
+        terugButton.setOnAction(e -> {
+            Scene loginScene = new Scene(new LoginScreen(stage), 800, 600);
+            loginScene.getStylesheets().add(
+                    getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/homescreen.css").toExternalForm()
+            );
+            stage.setScene(loginScene);
+        });
 
         getChildren().addAll(title, nameField, emailField, passwordField, roleBox, registerButton, terugButton, feedback);
     }

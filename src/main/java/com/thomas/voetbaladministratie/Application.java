@@ -1,23 +1,28 @@
 package com.thomas.voetbaladministratie;
 
 
+import com.thomas.voetbaladministratie.screens.LoginScreen;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Application extends javafx.application.Application {
-
     @Override
-    public void start(Stage primaryStage) {
-        // Start met LoginScreen
-        com.thomas.voetbaladministratie.screens.LoginScreen loginScreen = new com.thomas.voetbaladministratie.screens.LoginScreen(primaryStage);
-        Scene scene = new Scene(loginScreen, 800, 600);
+    public void start(Stage stage) {
+        LoginScreen root = new LoginScreen(stage);
+        Scene scene = new Scene(root, 800, 600);
 
-        primaryStage.setTitle("Voetbal Administratie");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        // ✅ CSS toevoegen
+        scene.getStylesheets().add(
+                getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/style.css").toExternalForm()
+        );
+
+        stage.setScene(scene);
+        stage.setTitle("Voetbalapplicatie");
+        stage.show();
     }
 
     public static void main(String[] args) {
         launch(args);
     }
 }
+

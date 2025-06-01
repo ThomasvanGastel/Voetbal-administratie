@@ -1,5 +1,6 @@
 package com.thomas.voetbaladministratie.screens;
 
+import com.thomas.voetbaladministratie.components.Header;
 import com.thomas.voetbaladministratie.util.Session;
 import com.thomas.voetbaladministratie.model.User;
 import javafx.scene.control.Button;
@@ -10,22 +11,19 @@ import javafx.stage.Stage;
 public class HomeScreen extends VBox {
 
     public HomeScreen(Stage stage) {
-        User user = Session.getCurrentUser();
+        getStyleClass().add("main-layout");
 
-        Label welcome = new Label("Welkom, " + user.getName());
-        getChildren().add(welcome);
+        Header header = new Header(stage, "Dashboard");
+        getChildren().add(header);
 
-        // Voorbeeld: rolgebaseerde knoppen
-        if ("admin".equals(user.getRole())) {
-            Button beheerGebruikers = new Button("Gebruikersbeheer");
-            getChildren().add(beheerGebruikers);
-        }
+        // rest van je layout
+        Label welkom = new Label("Welkom, " + Session.getCurrentUser().getName());
+        welkom.getStyleClass().add("title-label");
 
-        // Meer knoppen hier...
-        Button teamButton = new Button("Teambeheer");
-        teamButton.setOnAction(e ->
-                stage.setScene(new javafx.scene.Scene(new TeamScreen(stage), 800, 600))
-        );
-        getChildren().add(teamButton);
+        Button teamBtn = new Button("Teambeheer");
+        teamBtn.getStyleClass().add("action-button");
+
+        getChildren().addAll(welkom, teamBtn);
     }
 }
+
