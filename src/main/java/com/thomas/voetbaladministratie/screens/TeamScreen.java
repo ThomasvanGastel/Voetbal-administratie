@@ -19,7 +19,7 @@ public class TeamScreen extends VBox {
         setSpacing(20);
         setPadding(new Insets(0, 0, 40, 0)); // top, right, bottom, left
         setAlignment(Pos.TOP_CENTER);
-        User trainer = Session.getCurrentUser();
+        User trainer = Session.getInstance().getCurrentUser();
 
 
         // Header

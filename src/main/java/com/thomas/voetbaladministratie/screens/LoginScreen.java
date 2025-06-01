@@ -44,7 +44,7 @@ public class LoginScreen extends VBox {
 
             User user = new UserDAO().login(email, password);
             if (user != null) {
-                Session.setCurrentUser(user);
+                Session.getInstance().getCurrentUser();
                 Scene homeScene = new Scene(new HomeScreen(stage), 800, 600);
                 homeScene.getStylesheets().add(
                         getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/style.css").toExternalForm()

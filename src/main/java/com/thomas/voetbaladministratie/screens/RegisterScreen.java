@@ -1,6 +1,8 @@
 package com.thomas.voetbaladministratie.screens;
 
 import com.thomas.voetbaladministratie.dao.UserDAO;
+import com.thomas.voetbaladministratie.model.User;
+import com.thomas.voetbaladministratie.util.Session;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -58,15 +60,20 @@ public class RegisterScreen extends VBox {
 
             boolean success = new UserDAO().register(name, email, password, role);
             if (success) {
-                feedback.setText("Account aangemaakt! Je kunt nu inloggen.");
-                Scene loginScene = new Scene(new LoginScreen(stage), 800, 600);
-                loginScene.getStylesheets().add(
-                        getClass().getResource("/style.css").toExternalForm()
+                // Gebruiker ophalen en sessie instellen
+                User newUser = new UserDAO().getUserByEmail(email);
+                Session.getInstance().setCurrentUser(newUser);
+
+                // Doorsturen naar dashboard
+                Scene scene = new Scene(new HomeScreen(stage), 800, 600);
+                scene.getStylesheets().add(
+                        getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/style.css").toExternalForm()
                 );
-                stage.setScene(loginScene);
+                stage.setScene(scene);
             } else {
                 feedback.setText("Registratie mislukt. Probeer het opnieuw.");
             }
+
         });
 
         terugButton.getStyleClass().add("secondary-button");

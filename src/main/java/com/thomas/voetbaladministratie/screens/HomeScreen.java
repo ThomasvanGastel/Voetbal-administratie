@@ -19,7 +19,7 @@ public class HomeScreen extends VBox {
         setPadding(new Insets(0, 0, 40, 0)); // top, right, bottom, left
         setAlignment(Pos.TOP_CENTER);
 
-        User user = Session.getCurrentUser();
+        User user = Session.getInstance().getCurrentUser();
 
         // Voeg header toe (bovenaan)
         Header header = new Header(stage, "Dashboard");

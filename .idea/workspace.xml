@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="610bb3eb-6cd7-4d10-8349-defb8ec0c624" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/components/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/components/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/GameDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/GameDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/ResultDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/ResultDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/TeamDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/model/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/dao/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/HomeScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/LoginScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/RegisterScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/RegisterScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/ResultaatScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/ResultaatScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/TeamScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/TeamScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/WedstrijdScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/screens/WedstrijdScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/thomas/voetbaladministratie/stylesheet/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/thomas/voetbaladministratie/stylesheet/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/util/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thomas/voetbaladministratie/util/Session.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ThomasvanGastel"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ThomasvanGastel&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ThomasvanGastel/Voetbal-administratie.git",
-    "accountId": "47614975-973e-4f66-a045-5caf41f6dda3"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ThomasvanGastel/Voetbal-administratie.git&quot;,
+    &quot;accountId&quot;: &quot;47614975-973e-4f66-a045-5caf41f6dda3&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -67,32 +60,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.HelloApplication.executor": "Run",
-    "JUnit.GameDAOTest.testAddGame.executor": "Run",
-    "JUnit.TeamDAOTest.testGetAllTeams.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GameDAOTest.testAddGame.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TeamDAOTest.testGetAllTeams.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\thoma\Documents\GitHub\Voetbal-administratie\src\main\resources\com\thomas\voetbaladministratie\images\imagesss" />
@@ -103,7 +96,20 @@
       <recent name="com.thomas.voetbaladministratie" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TeamDAOTest.testGetAllTeams">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thomas.voetbaladministratie.Application" />
+      <module name="Voetbal-administratie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thomas.voetbaladministratie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameDAOTest.testAddGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Voetbal-administratie" />
       <extension name="coverage">
@@ -138,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.TeamDAOTest.testGetAllTeams" />
         <item itemvalue="JUnit.GameDAOTest.testAddGame" />
       </list>
@@ -170,7 +177,7 @@
       <workItem from="1748539811143" duration="2900000" />
       <workItem from="1748590332165" duration="10317000" />
       <workItem from="1748698850154" duration="5452000" />
-      <workItem from="1748775918357" duration="16548000" />
+      <workItem from="1748775918357" duration="18243000" />
     </task>
     <servers />
   </component>

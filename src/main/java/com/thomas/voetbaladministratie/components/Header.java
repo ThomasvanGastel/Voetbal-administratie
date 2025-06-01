@@ -19,7 +19,7 @@ public class Header extends BorderPane {
         Label title = new Label(titleText);
         title.getStyleClass().add("header-title");
 
-        Label userInfo = new Label("Ingelogd als: " + Session.getCurrentUser().getName());
+        Label userInfo = new Label("Ingelogd als: " + Session.getInstance().getCurrentUser().getName());
         userInfo.getStyleClass().add("header-user");
 
         HBox left = new HBox(10, title, userInfo);

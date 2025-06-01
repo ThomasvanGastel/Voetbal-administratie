@@ -3,17 +3,25 @@ package com.thomas.voetbaladministratie.util;
 import com.thomas.voetbaladministratie.model.User;
 
 public class Session {
-    private static User currentUser;
 
-    public static void setCurrentUser(User user) {
-        currentUser = user;
+    private static Session instance;
+    private User currentUser;
+
+    private Session() {}
+
+    public static Session getInstance() {
+        if (instance == null) {
+            instance = new Session();
+        }
+        return instance;
     }
 
-    public static User getCurrentUser() {
+    public void setCurrentUser(User user) {
+        this.currentUser = user;
+    }
+
+    public User getCurrentUser() {
         return currentUser;
     }
-
-    public static void clear() {
-        currentUser = null;
-    }
 }
+

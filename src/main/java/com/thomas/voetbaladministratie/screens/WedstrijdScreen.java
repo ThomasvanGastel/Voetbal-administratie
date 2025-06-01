@@ -27,6 +27,16 @@ public class WedstrijdScreen extends VBox {
         // Pagina-header
         getChildren().add(new Header(stage, "Wedstrijden"));
 
+        Button backButton = new Button("Terug");
+        backButton.getStyleClass().add("secondary-button");
+        backButton.setOnAction(e -> {
+            Scene scene = new Scene(new HomeScreen(stage), 800, 600);
+            scene.getStylesheets().add(
+                    getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/style.css").toExternalForm()
+            );
+            stage.setScene(scene);
+        });
+
         // Knop om nieuwe wedstrijd toe te voegen
         Button addButton = new Button("Wedstrijd toevoegen");
         addButton.getStyleClass().add("primary-button");
@@ -40,7 +50,7 @@ public class WedstrijdScreen extends VBox {
         HBox topBar = new HBox();
         Region spacer = new Region();
         HBox.setHgrow(spacer, Priority.ALWAYS);
-        topBar.getChildren().addAll(spacer, addButton);
+        topBar.getChildren().addAll(backButton,spacer, addButton);
         topBar.setAlignment(Pos.CENTER_LEFT);
 
         // Tabel instellen en vullen
