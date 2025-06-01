@@ -12,6 +12,7 @@ public class TeamDAO {
 
     private final UserDAO userDAO = new UserDAO();
 
+    // Haalt alle teams op uit de database
     public List<Team> getAllTeams() {
         List<Team> teams = new ArrayList<>();
         String sql = "SELECT * FROM team";
@@ -38,7 +39,8 @@ public class TeamDAO {
         return teams;
     }
 
-    public void addTeam(Team team) {
+    // Voegt een nieuw team toe aan de database
+    public boolean addTeam(Team team) {
         String sql = "INSERT INTO team (teamName, ageCategory, trainerId) VALUES (?, ?, ?)";
 
         try (Connection conn = DatabaseConnection.getConnection();
@@ -48,13 +50,15 @@ public class TeamDAO {
             stmt.setString(2, team.getAgeCategory());
             stmt.setInt(3, team.getTrainer().getUserId());
 
-            stmt.executeUpdate();
+            return stmt.executeUpdate() > 0;
 
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
     }
 
+    // Haalt één team op via ID
     public Team getById(int id) {
         String sql = "SELECT * FROM team WHERE teamId = ?";
 
@@ -79,5 +83,4 @@ public class TeamDAO {
 
         return null;
     }
-
 }

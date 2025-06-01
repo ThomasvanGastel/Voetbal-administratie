@@ -12,10 +12,9 @@ public class ResultDAO {
 
     private final GameDAO gameDAO = new GameDAO();
 
-    // ✅ Sla een nieuw resultaat op in de database
-    public void addResult(Result result) {
+    // Sla een nieuw resultaat op in de database
+    public boolean addResult(Result result) {
         String sql = "INSERT INTO result (gameId, scoreHome, scoreAway) VALUES (?, ?, ?)";
-
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
@@ -23,12 +22,14 @@ public class ResultDAO {
             stmt.setInt(2, result.getScoreHome());
             stmt.setInt(3, result.getScoreAway());
 
-            stmt.executeUpdate();
+            return stmt.executeUpdate() > 0;
 
         } catch (SQLException e) {
-            System.err.println("Fout bij toevoegen van resultaat: " + e.getMessage());
+            e.printStackTrace();
+            return false;
         }
     }
+
 
     // ✅ Haal alle resultaten op, inclusief gekoppelde Game
     public List<Result> getAllResults() {
