@@ -13,6 +13,7 @@ public class Team {
         this.trainer = trainer;
     }
 
+
     public int getTeamId() {
         return teamId;
     }
@@ -28,6 +29,8 @@ public class Team {
     public User getTrainer() {
         return trainer;
     }
+
+
 
     @Override
     public String toString() {
