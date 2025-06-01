@@ -2,9 +2,8 @@
 .root, .main-layout {
     -fx-font-family: "Arial";
     -fx-background-color: #FFFFFF;
-    -fx-padding: 40px;
+    -fx-padding: 0 0 10 0; /* top right bottom left */
     -fx-spacing: 20px;
-    -fx-alignment: center;
 }
 
 /* HEADER */
@@ -82,7 +81,6 @@
     -fx-background-color: #e46f00;
 }
 
-/* SECUNDAIRE KNOP */
 .secondary-button {
     -fx-pref-width: 250px;
     -fx-background-color: #E0E0E0;
@@ -99,3 +97,9 @@
     -fx-font-weight: bold;
     -fx-font-size: 14px;
 }
+
+.danger-button {
+    -fx-background-color: #d9534f;
+    -fx-text-fill: white;
+}
+

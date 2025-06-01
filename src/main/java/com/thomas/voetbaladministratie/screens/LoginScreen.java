@@ -51,7 +51,7 @@ public class LoginScreen extends VBox {
                 );
                 stage.setScene(homeScene);
             } else {
-                feedback.setText("Foutieve inloggegevens.");
+                feedback.setText("Verkeerde inloggegevens.");
             }
         });
 

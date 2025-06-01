@@ -14,7 +14,7 @@ public class RegisterScreen extends VBox {
         getStyleClass().add("main-layout");
         setAlignment(Pos.CENTER);
         setSpacing(20);
-        setPadding(new Insets(40));
+        setPadding(new Insets(0, 0, 40, 0)); // top, right, bottom, left
 
         Label title = new Label("Account aanmaken");
         title.getStyleClass().add("title-label");
@@ -61,7 +61,7 @@ public class RegisterScreen extends VBox {
                 feedback.setText("Account aangemaakt! Je kunt nu inloggen.");
                 Scene loginScene = new Scene(new LoginScreen(stage), 800, 600);
                 loginScene.getStylesheets().add(
-                        getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/homescreen.css").toExternalForm()
+                        getClass().getResource("/style.css").toExternalForm()
                 );
                 stage.setScene(loginScene);
             } else {
@@ -69,12 +69,13 @@ public class RegisterScreen extends VBox {
             }
         });
 
+        terugButton.getStyleClass().add("secondary-button");
         terugButton.setOnAction(e -> {
-            Scene loginScene = new Scene(new LoginScreen(stage), 800, 600);
-            loginScene.getStylesheets().add(
-                    getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/homescreen.css").toExternalForm()
+            Scene scene = new Scene(new LoginScreen(stage), 800, 600);
+            scene.getStylesheets().add(
+                    getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/style.css").toExternalForm()
             );
-            stage.setScene(loginScene);
+            stage.setScene(scene);
         });
 
         getChildren().addAll(title, nameField, emailField, passwordField, roleBox, registerButton, terugButton, feedback);

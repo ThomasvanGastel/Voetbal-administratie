@@ -1,7 +1,9 @@
 package com.thomas.voetbaladministratie.components;
 
+import com.thomas.voetbaladministratie.screens.LoginScreen;
 import com.thomas.voetbaladministratie.util.Session;
 import javafx.geometry.Insets;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
@@ -25,8 +27,11 @@ public class Header extends BorderPane {
         Button logoutButton = new Button("Log uit");
         logoutButton.getStyleClass().add("header-button");
         logoutButton.setOnAction(e -> {
-            Session.setCurrentUser(null);
-            stage.setScene(new javafx.scene.Scene(new com.thomas.voetbaladministratie.screens.LoginScreen(stage), 800, 600));
+            Scene scene = new Scene(new LoginScreen(stage), 800, 600);
+            scene.getStylesheets().add(
+                    getClass().getResource("/com/thomas/voetbaladministratie/stylesheet/style.css").toExternalForm()
+            );
+            stage.setScene(scene);
         });
 
         setLeft(left);
