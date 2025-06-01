@@ -32,25 +32,26 @@ public class UserDAO {
     }
 
     // Registratiemethode — neemt een User-object aan
-    public boolean register(User user) {
+    public boolean register(String name, String email, String password, String role) {
         String sql = "INSERT INTO user (name, email, password, role) VALUES (?, ?, ?, ?)";
 
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
-            stmt.setString(1, user.getName());
-            stmt.setString(2, user.getEmail());
-            stmt.setString(3, user.getPassword());
-            stmt.setString(4, user.getRole());
+            stmt.setString(1, name);
+            stmt.setString(2, email);
+            stmt.setString(3, password);
+            stmt.setString(4, role);
 
-            stmt.executeUpdate();
-            return true;
+            int rowsInserted = stmt.executeUpdate();
+            return rowsInserted > 0;
 
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
     }
+
 
     public User getUserById(int id) {
         String sql = "SELECT * FROM user WHERE userId = ?";

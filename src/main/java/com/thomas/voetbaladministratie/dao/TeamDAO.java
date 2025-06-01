@@ -54,4 +54,30 @@ public class TeamDAO {
             e.printStackTrace();
         }
     }
+
+    public Team getById(int id) {
+        String sql = "SELECT * FROM team WHERE teamId = ?";
+
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setInt(1, id);
+            ResultSet rs = stmt.executeQuery();
+
+            if (rs.next()) {
+                return new Team(
+                        rs.getInt("teamId"),
+                        rs.getString("teamName"),
+                        rs.getString("ageCategory"),
+                        new UserDAO().getUserById(rs.getInt("trainerId"))
+                );
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
 }
